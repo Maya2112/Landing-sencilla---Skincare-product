@@ -1,0 +1,209 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #2c3e50;
+  background-color: #fefdf9;
+  line-height: 1.6;
+}
+
+/* Hero section */
+.hero {
+  background: url('img/heroImg.png') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 5rem;
+  margin-bottom: -1rem;
+}
+
+.hero p {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #3a7752;
+  color: white;
+  padding: 1.2rem 3.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2d5d40;
+}
+
+/* Sobre el producto */
+.sobre-producto {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #ecf4ec;
+}
+
+.sobre-producto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #3a7752;
+}
+
+.sobre-producto p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+/* Responsive básico */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
+
+.beneficios {
+  padding: 4rem 2rem;
+  background-color: #f9fff9;
+  text-align: center;
+}
+
+.beneficios h2 {
+  font-size: 2rem;
+  color: #3a7752;
+  margin-bottom: 2rem;
+}
+
+.beneficios-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.beneficio {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.beneficio img {
+  width: 60px;
+  margin-bottom: 1rem;
+  border-radius: 2rem;
+}
+
+.beneficio h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.beneficio p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.testimonios {
+  padding: 4rem 2rem;
+  background-color: #ecf4ec;
+  text-align: center;
+}
+
+.testimonios h2 {
+  font-size: 2rem;
+  color: #3a7752;
+  margin-bottom: 2rem;
+}
+
+.testimonio {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.testimonio p {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonio h4 {
+  font-weight: normal;
+  color: #555;
+}
+
+.contacto {
+  padding: 4rem 2rem;
+  background-color: #fefdf9;
+  text-align: center;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  color: #3a7752;
+  margin-bottom: 2rem;
+}
+
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.formulario button {
+  background-color: #3a7752;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #2d5d40;
+}
