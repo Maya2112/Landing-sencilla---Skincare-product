@@ -7,7 +7,7 @@ Incluye **frontend** desarrollado en HTML, CSS y JavaScript, y un **backend** co
 
 ## 📸 Vista previa
 
-![Luna Skincare](client/img/hero.jpg)
+![Luna Skincare](client/img/herolmg.png)
 
 ---
 
